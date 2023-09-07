@@ -13,7 +13,7 @@ public class LoginPageTests extends TestRunner {
 
     @ParameterizedTest()
     @MethodSource("locationDataProvider")
-    public void verifyErrorMessageIsVisible(String location) {
+    public void verifyErrorMessage(String location) {
         LoginPage loginPage = new LoginPage()
                 .openLoginPage()
                 .setUsername(username)
